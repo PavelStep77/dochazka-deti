@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docházka dětí</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Docházka dětí na tréninky</h1>
+    <div>
+        <label for="datum">Datum tréninku:</label>
+        <input type="date" id="datum">
+    </div>
+    <div>
+        <label for="den">Den tréninku:</label>
+        <select id="den">
+            <option value="Pondělí">Pondělí</option>
+            <option value="Středa">Středa</option>
+            <option value="Pátek">Pátek</option>
+        </select>
+    </div>
+    <div id="deti">
+        <h2>Děti</h2>
+        <div>
+            <label>Jan</label>
+            <input type="checkbox" class="dochazka" data-jmeno="Jan">
+        </div>
+        <div>
+            <label>Petr</label>
+            <input type="checkbox" class="dochazka" data-jmeno="Petr">
+        </div>
+        <div>
+            <label>Eva</label>
+            <input type="checkbox" class="dochazka" data-jmeno="Eva">
+        </div>
+        <div>
+            <label>Anna</label>
+            <input type="checkbox" class="dochazka" data-jmeno="Anna">
+        </div>
+        <div>
+            <label>Tomáš</label>
+            <input type="checkbox" class="dochazka" data-jmeno="Tomáš">
+        </div>
+    </div>
+    <button id="zapisDochazku">Zapsat docházku</button>
+    <h2>Docházka</h2>
+    <table id="tabulkaDochazky">
+        <thead>
+            <tr>
+                <th>Jméno</th>
+                <th>Datum</th>
+                <th>Den</th>
+                <th>Přítomnost</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h2>Součty docházky</h2>
+    <table id="soucetDochazky">
+        <thead>
+            <tr>
+                <th>Jméno</th>
+                <th>Součet</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
